@@ -288,11 +288,11 @@ html{
     100%{width: 89%;}
 }
 
-.skills .skill .photoshop{
+.skills .skill .C{
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 2s C forwards;
 }
-@keyframes photoshop {
+@keyframes C {
     0%{width: 0%;}
     100%{width: 95%;}
 }
@@ -693,7 +693,7 @@ footer .arriba{
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #c7a709;
+        background-color: #fefdf8;
         width: 180px;
     }
     nav.responsive ul{
