@@ -28,13 +28,18 @@ function efectoHabilidades(){
         habilidades[4].classList.add("drupal");
         habilidades[5].classList.add("adobe");
         habilidades[6].classList.add("ia");
-        habilidades[7].classList.add("comunicacion");
-        habilidades[8].classList.add("trabajo");
-        habilidades[9].classList.add("creatividad");
-        habilidades[10].classList.add("dedicacion");
-        habilidades[11].classList.add("proyect");
-        habilidades[12].classList.add("machine");
-        habilidades[13].classList.add("seguridad");
+        habilidades[7].classList.add("Python");
+        habilidades[8].classList.add("CC");
+        habilidades[9].classList.add("Java");
+        habilidades[10].classList.add("Ado");
+        habilidades[11].classList.add("Procreate");
+        habilidades[12].classList.add("comunicacion");
+        habilidades[13].classList.add("trabajo");
+        habilidades[14].classList.add("creatividad");
+        habilidades[15].classList.add("dedicacion");
+        habilidades[16].classList.add("proyect");
+        habilidades[17].classList.add("machine");
+        habilidades[18].classList.add("seguridad");
     }
 }
 

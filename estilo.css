@@ -276,7 +276,7 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .htmlcss{
@@ -285,7 +285,7 @@ html{
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .C{
@@ -294,7 +294,7 @@ html{
 }
 @keyframes C {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 65%;}
 }
 
 .skills .skill .wordpress{
@@ -303,7 +303,7 @@ html{
 }
 @keyframes wordpress {
     0%{width: 0%;}
-    100%{width: 81%;}
+    100%{width: 75%;}
 }
 
 .skills .skill .drupal{
@@ -312,7 +312,7 @@ html{
 }
 @keyframes drupal {
     0%{width: 0%;}
-    100%{width: 85%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .adobe{
@@ -321,7 +321,7 @@ html{
 }
 @keyframes adobe {
     0%{width: 0%;}
-    100%{width: 100%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .ia{
@@ -330,16 +330,56 @@ html{
 }
 @keyframes ia {
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 50%;}
+}
+.skills .skill .Python{
+    width: 0%;
+    animation: 2s Python forwards;
+}
+@keyframes Python {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+.skills .skill .CC{
+    width: 0%;
+    animation: 2s CC forwards;
+}
+@keyframes CC {
+    0%{width: 0%;}
+    100%{width: 70%;}
 }
 
+.skills .skill .Java{
+    width: 0%;
+    animation: 2s Java forwards;
+}
+@keyframes Java {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+.skills .skill .Ado{
+    width: 0%;
+    animation: 2s Ado forwards;
+}
+@keyframes Ado {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.skills .skill .Procreate{
+    width: 0%;
+    animation: 2s Procreate forwards;
+}
+@keyframes Procreate {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
 .skills .skill .comunicacion{
     width: 0%;
     animation: 2s comunicacion forwards;
 }
 @keyframes comunicacion {
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .trabajo{
@@ -348,7 +388,7 @@ html{
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .creatividad{
@@ -357,7 +397,7 @@ html{
 }
 @keyframes creatividad {
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 95%;}
 }
 
 .skills .skill .dedicacion{
@@ -366,7 +406,7 @@ html{
 }
 @keyframes dedicacion {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .proyect{
@@ -375,7 +415,7 @@ html{
 }
 @keyframes proyect {
     0%{width: 0%;}
-    100%{width: 94%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .machine{
@@ -384,7 +424,7 @@ html{
 }
 @keyframes machine {
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .seguridad{
