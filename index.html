@@ -1,153 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-  
-  </head>
-  
-  <body>
-    <div class="wrapper">
-      <header>
-        <nav class="navbar">
-          <div class="brand">
-            <h2>J<span>C</span></h2>
-          </div>
-          <ul class="menu">
-            <li><a href="#" class="active">Inicio</a></li>
-            <li><a href="#">Quien Soy</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main">
-        <div class="info-content">
-          <h1>I'm <span>John</span> Carter</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt facilis minima eveniet accusamus rem sint doloribus quia eligendi expedita optio, dolore quo ipsa atque. Expedita doloremque deleniti alias iste quia?</p>
-          <a download href="#"><button class="download-cv">Download CV</button></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Marlyn Alemida</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOMEPAGE</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT\</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.png" alt="">
+            </div>
+            <h1>Marlyn Almeida</h1>
+            <h2>Software engineer</h2>
+            <div class="redes">
+                <a href="https://github.com/marlyn-almeida"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/marlyn-almeida-bb7534178/"><i class="fa-brands fa-linkedin-in"></i></a>
+                
+            </div>
         </div>
-        <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/pexels-photo-1516680-removebg-preview_f7yxxl.png" alt="">
-      </main>
-    </div>
-    <div class="about">
-      <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/about_grtker.png" alt="">
-      <div class="about-info">
-        <h2>About me</h2>
-        <div class="divider"></div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores id cumque asperiores fugit, quis repudiandae accusamus quisquam modi numquam laudantium fugiat enim eum pariatur amet illum recusandae debitis reprehenderit sed?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores id cumque asperiores fugit, quis repudiandae accusamus quisquam modi numquam laudantium fugiat enim eum pariatur amet illum recusandae debitis reprehenderit sed?</p>
-        <button class="download-cv">Read more</button>
-      </div>
-    </div>
-    <div class="portfolio">
-      <div class="portfolio-heading">
-        <h2>My Portfolio</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="container">
-        <div class="card">
-          <div class="card__img">
-          </div>
-          <div class="card__title">
-            <h2>Project Description</h2>
-          </div>
-          <div class="card__proyect-links">
-            <a href="#">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-globe-asia"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-code"></i>
-            </a>
-          </div>
-          <div class="button-content">
-            <button class="project-details-button download-cv">
-              <a href="#">Project Details</a>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>
+              
+              
+              Hello! I'm Marlyn Almeida. </span> I am a student studying Software Engineering at the University of the Armed Forces - ESPE.</p>
+            
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal information</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            29-08-2000
+                        </li>
+                        <li>
+                            <strong>Phone</strong>
+                            +593 96 394 6610
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            msalmeida3@espe.edu.ec
+                            marlynsalome@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            
+                        </li>
+                       
+                    </ul>
+                </div>
+                
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVEL</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>SPORT</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>DRAW</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
             </button>
-          </div>
         </div>
-        <div class="card">
-          <div class="card__img">
+    </section>
+
+<!-- SECCION SKILLS -->
+<section class="skills" id="skills">
+  <div class="contenido-seccion">
+      <h2>Skills</h2>
+      <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+              <h3>Technical Skills</h3>
+              <div class="skill">
+                  <span>Javascript</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>60%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <span>HTML & CSS</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>70%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <span>C#</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>60%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <span>Mysql</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>70%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <span>Php</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>70%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <span>Postgres</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>10%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <span>Oracle</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>50%</span>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="card__title">
-            <h2>Project Description</h2>
+          <!-- Professional Skills -->
+          <div class="col">
+              <h3>Professional Skills</h3>
+              <div class="skill">
+                  <span>Communication</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>80%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <span>Teamwork</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>70%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <span>Creativity</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>90%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <span>Dedication</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>75%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <span>Proyect Management</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>94%</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill">
+                  <span>Leadership</span>
+                  <div class="barra-skill">
+                      <div class="progreso">
+                          <span>80%</span>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="card__proyect-links">
-            <a href="#">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-globe-asia"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-code"></i>
-            </a>
-          </div>
-          <div class="button-content">
-            <button class="project-details-button download-cv">
-              <a href="#">Project Details</a>
-            </button>
-          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Bachelor of science</h4>
+                        <span class="casa">Marqués de Selva Alegre Private Educational Unita</span>
+                        <span class="fecha">2012 - 2018</span>
+                        <p>I attended school and my high school degree at this school, leaving as a standard bearer for the canton of Rumiñahui. These were great years of my life that contributed to my education and personal and professional growth..</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Software Engineering</h4>
+                        <span class="casa">University of the Armed Forces - ESPE</span>
+                        <span class="fecha">2018 - 2025</span>
+                        <p>I am studying my higher education at the University of the Armed Forces - ESPE, which was my starting point to discover the beautiful world of programming.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Networks</h4>
+                        <span class="casa">Cisco</span>
+                        <span class="fecha">2023</span>
+                        <p>At Cisco I learned a lot about networks, always because I passed a course on this platform. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work experience</h3>
+                    <div class="item der">
+                        <h4>Internships</h4>
+                        <span class="casa">Webcoop System</span>
+                        <span class="fecha">2024</span>
+                        <p>Currently, I am doing an internship at WebCoop, a company specialized in the development of financial software. During my time at WebCoop, I have had the opportunity to work on exciting projects related to financial systems for cooperatives, which has given me valuable practical experience in the field of software engineering focused on the financial sector. I have collaborated in the design, development and testing of innovative technological solutions that have a direct impact on the efficiency and functionality of financial operations. This experience has allowed me to apply my theoretical knowledge in a professional environment, developing key skills such as teamwork, problem solving and high-quality software development.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
         </div>
-        <div class="card">
-          <div class="card__img">
-          </div>
-          <div class="card__title">
-            <h2>Project Description</h2>
-          </div>
-          <div class="card__proyect-links">
-            <a href="#">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-globe-asia"></i>
-            </a>
-            <a href="">
-              <i class="fas fa-code"></i>
-            </a>
-          </div>
-          <div class="button-content">
-            <button class="project-details-button download-cv">
-              <a href="#">Project Details</a>
-            </button>
-          </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/certi.png" alt="">
+                    <div class="overlay">
+                        <h3>Networking Essentials</h3>
+                        <p>Cisco</p>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-      </div>
-    </div>
-  
-    <div class="contact-section">
-      <div class="contact-heading">
-        <h2>Keep in touch</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="container-contact">
-        <img src="https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543288/samples/img-opacity50_jgruyl.png" alt="">
-        <div class="contact-form">
-          <h4>Send me a message...</h4>
-          <form class="form-group">
-            <input type="text" placeholder="Name" class="input">
-            <input type="email" placeholder="Email" class="input">
-            <textarea name="message" placeholder="Place your message here..."></textarea>
-            <button type="submit" class="btn-submit">Send message</button>
-          </form>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+              
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/mapa.png" alt="">
+                </div>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                 Quito and Atahualpa Street #770
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contact Us 
+                                0963946610 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: msalmeida3@espe.edu.ec, marlynsalome@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                
+            
         </div>
-      </div>
-    </div>
-  
-    <footer class="footer">
-      <div class="footer-content">
-        <h2>John Carter</h2>
-        <h5>Frontend Developer</h5>
-      </div>
-      <div class="sotial-networks">
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-twitter-square"></i>
-      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="Networks">
+          <a href="https://github.com/marlyn-almeida"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/marlyn-almeida-bb7534178/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
     </footer>
-  </body>
+
+    <script src="script.js"></script>
+</body>
+</html>
